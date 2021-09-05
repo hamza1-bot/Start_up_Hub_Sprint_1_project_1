@@ -1,0 +1,93 @@
+@import "_variable";
+@import "_header";
+@import "_pages";
+@import "_footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    &:focus{
+        outline: none;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #5f5f5f;
+    letter-spacing: .2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.heading {
+    position: relative;
+    top: -7px;
+
+    h2 {
+        font-size: 120px;
+        margin-bottom: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #b9b9b9;
+        line-height: .7;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(133, 133, 133);
+}
